@@ -1,0 +1,14 @@
+{
+  "name": "jspractice",
+  "version": "1.0.0",
+  "description": "JavaScript pracice",
+  "main": "script.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "jenn",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

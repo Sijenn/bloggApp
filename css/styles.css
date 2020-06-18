@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Black-ops';
+  src: url('../fonts/BlackOpsOne-Regular.ttf');
+}
+@font-face{
+  font-family: 'Krona One';
+  src: url('../fonts/KronaOne-Regular.ttf');
+}
+@font-face{
+  font-family: 'Khand';
+  src: url('../fonts/Khand-Regular.ttf');
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.6s ease-in-out;
+  transition-delay: 0.01s;
+  
+}
+
+body{
+  background-image: url('../images/back-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  transition: all 0.1s ease-in-out;
+  color: white;
+  font-family: 'Khand', sans-serif;
+  
+}
+
+/********************  NAVIGATION BAR STYLING **********************/
+
+
+/********************  BLOG STYLING **********************/
+ .box-area{
+  margin: 8% 0;
+  padding: 30px 0;
+  background: #efefef;
+  
+}
+
+
+.single-box{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px #000;
+  display: inline-block;
+  border-radius: 20px;
+
+}
+.box-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+.box-img img{
+  width: 100%;
+  transition: .3;
+}
+.single-box:hover .box-img img{
+  transform: scale(1.1);
+}
+.single-box .box-content{
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  transition: .4s;
+  background:  #fff;
+  z-index: 5;
+
+  
+}
+.single-box:hover .box-content{
+  transform: scale(1.5);
+}
+.upper-info{
+  padding: 5px 20px 5px 20px;
+transition: .5s;  
+}
+.upper-info h3{
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+  margin: 5px;
+  font-family: big john;
+}
+
+
+
+.single-box:hover .upper-info h3{
+  color: crimson;
+}
+.single-box:hover .box-content{
+  background: #000;
+  opacity: 0.9;
+}
+.upper-info p{
+  margin-top: 15px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 8px;
+}
+.lower-info{
+  color: #fff;
+  padding: 0 10px 5px;
+}
+@media only screen and (max-width:767px){
+  .single-box {
+    margin-bottom: 30px;
+  }
+} 
+
+
+
